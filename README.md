@@ -1,3 +1,4 @@
+# NEXTJS MASTERY Huxn
 
 ## File based routing
 - understands page.tsx and layout.tsx
@@ -5,4 +6,5 @@
 - routing -> client side routing 
 - Link
 - Image
+
 

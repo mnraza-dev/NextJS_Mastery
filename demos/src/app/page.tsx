@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const Home = () => {
@@ -11,6 +12,13 @@ const Home = () => {
           Manage your tasks, track analytics, and stay organized with our
           powerful dashboard.
         </p>
+
+        <Link
+          href="/dashboard"
+          className=" inline-flex items-center  justify-center px-8  bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 rounded-lg"
+        >
+          Go to Dashboard
+        </Link>
       </div>
     </div>
   );

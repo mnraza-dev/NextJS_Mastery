@@ -74,16 +74,35 @@ const Tasks = () => {
                 <h2 className="text-xl font-semibold text-gray-800">
                   {task.title}
                 </h2>
-                <p className="text-sm text-gray-600 mt-2"> {task.description}</p>
-                <p className="text-sm text-gray-600 mt-2">Due Date:  {task.dueDate}</p>
+                <p className="text-sm text-gray-600 mt-2">
+                  {" "}
+                  {task.description}
+                </p>
+                <p className="text-sm text-gray-600 mt-2">
+                  Due Date: {task.dueDate}
+                </p>
               </div>
 
               <section className="flex space-x-4">
-                <span className={` text-sm text-gray-600 px-4 py-3  text-center rounded-full  ${task.status === "completed" ? "bg-green-100 text-green-800" : task.status === "in-progress" ? "bg-yellow-100 text-yellow-800" : "bg-red-100 text-red-800"}`}>
-                  {
-                    task.status 
-                  }
+                <span
+                  className={` text-sm text-gray-600 px-4 py-3  text-center rounded-xl  ${
+                    task.status === "completed"
+                      ? "bg-green-100 text-green-800"
+                      : task.status === "in-progress"
+                      ? "bg-yellow-100 text-yellow-800"
+                      : "bg-red-100 text-red-800"
+                  }`}
+                >
+                  {task.status}
                 </span>
+                {/* Action Buttons */}
+
+                <button className="cursor-pointer  px-4 py-2 bg-blue-600 rounded-lg  text-white hover:bg-blue-700 transition-colors ">
+                  Edit
+                </button>
+                <button className="cursor-pointer px-4 py-2 bg-red-600 rounded-lg  text-white hover:bg-red-700 transition-colors ">
+                  Delete
+                </button>
               </section>
             </div>
           ))}

@@ -8,7 +8,14 @@ const Dashboard = () => {
           <h1 className="text-4xl mb-5 sm:mb-0 font-extrabold text-gray-900">
             Dashboard
           </h1>
+          <p className="text-lg text-gray-600 mt-3">
+            Welcome back! Here you can manage your tasks, view analytics, and
+            make adjustments.
+          </p>
         </div>
+        {/* Dashboard Grid */}
+
+        
       </div>
     </div>
   );

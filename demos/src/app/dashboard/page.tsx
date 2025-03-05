@@ -16,16 +16,21 @@ const Dashboard = () => {
         </div>
         {/* Dashboard Grid */}
 
-        <div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           <Link
             href="/dashboard/users"
             className="inline-flex items-center justify-center px-8 bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 rounded-lg"
           >
-            <div>
-              <h2>
-                Tasks
-              </h2>
+            <div className="flex items-center gap-2">
+              <h2>Tasks</h2>
+              <span>📃</span>
             </div>
+            <p
+              className="
+            "
+            >
+              View, Organize, and Manage your daily tasks
+            </p>
           </Link>
         </div>
 

@@ -100,6 +100,13 @@ const Tasks = () => {
                 <button className="cursor-pointer  px-4 py-2 bg-blue-600 rounded-lg  text-white hover:bg-blue-700 transition-colors ">
                   Edit
                 </button>
+                {
+                  task.status !== "completed" && (
+                    <button className="cursor-pointer px-4 py-2 bg-green-100 rounded-lg  text-green-800 hover:bg-green-200 transition-colors ">
+                    Mark as Complete
+                    </button>
+                  )
+                }
                 <button className="cursor-pointer px-4 py-2 bg-red-600 rounded-lg  text-white hover:bg-red-700 transition-colors ">
                   Delete
                 </button>

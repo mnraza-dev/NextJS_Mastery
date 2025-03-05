@@ -17,6 +17,7 @@ const Dashboard = () => {
         {/* Dashboard Grid */}
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          {/* Task Card */}
           <Link
             href="/dashboard/tasks"
             className="
@@ -24,7 +25,7 @@ const Dashboard = () => {
           >
             <div className="flex items-center gap-2">
               <h2 className="text-xl font-semibold text-blue-800 ">Tasks</h2>
-              <span className="text-blue-500 text-2xl">📃</span>
+              <span className="text-blue-500 text-2xl">📗</span>
             </div>
             <p
               className="
@@ -36,29 +37,26 @@ const Dashboard = () => {
           <Link
             href="/dashboard/analytics"
             className="
-            bg-blue-100 hover:bg-blue-200 p-6 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 ease-in-out transform hover:scale-105"
+            bg-green-100 hover:bg-green-200 p-6 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 ease-in-out transform hover:scale-105"
           >
             <div className="flex items-center gap-2">
-              <h2 className="text-xl font-semibold text-blue-800 ">
+              <h2 className="text-xl font-semibold text-green-800 ">
                 Analytics
               </h2>
-              <span className="text-blue-500 text-2xl">📃</span>
+              <span className="text-green-500 text-2xl">📊</span>
             </div>
             <p className="text-gray-700 mt-2 ">
               View your analytics to see how you're performing.
             </p>
           </Link>
           <Link
-            href="/dashboard/tasks"
+                 href="/dashboard/analytics/settings"
             className="
-            bg-blue-100 hover:bg-blue-200 p-6 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 ease-in-out transform hover:scale-105"
+            bg-purple-100 hover:bg-purple-300 p-6 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 ease-in-out transform hover:scale-105"
           >
             <div className="flex items-center gap-2">
-            <h2 className="text-xl font-semibold text-blue-800 ">
-                Settings
-              </h2>
-              <span className="text-blue-500 text-2xl">⚙️</span>
-           
+              <h2 className="text-xl font-semibold text-purple-800 ">Settings</h2>
+              <span className="text-purple-500 text-2xl">⚙️</span>
             </div>
             <p
               className="

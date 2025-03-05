@@ -15,7 +15,37 @@ const Dashboard = () => {
         </div>
         {/* Dashboard Grid */}
 
-        
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {/* Card */}
+          <div className="bg-white rounded-lg shadow-lg p-6">
+            <h2 className="text-lg font-semibold text-gray-800">Tasks</h2>
+            <p className="text-gray-600 mt-2">
+              You have 3 tasks due today. View your tasks to get started.
+            </p>
+          </div>
+          {/* Card */}
+          <div className="bg-white rounded-lg shadow-lg p-6">
+            <h2 className="text-lg font-semibold text-gray-800">Analytics</h2>
+            <p className="text-gray-600 mt-2">
+              View your analytics to see how you're performing.
+            </p>
+          </div>
+          {/* Card */}
+          <div className="bg-white rounded-lg shadow-lg p-6">
+            <h2 className="text-lg font-semibold text-gray-800">Settings</h2>
+            <p className="text-gray-600 mt-2">
+              Adjust your settings to customize your experience.
+            </p>
+          </div>
+
+          {/* Card */}
+          <div className="bg-white rounded-lg shadow-lg p-6 col-span-3">
+            <h2 className="text-lg font-semibold text-gray-800">Messages</h2>
+            <p className="text-gray-600 mt-2">
+              You have 5 unread messages. View your messages to get started.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   );

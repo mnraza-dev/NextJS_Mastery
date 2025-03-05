@@ -23,7 +23,7 @@ const Dashboard = () => {
             className="
             bg-blue-100 hover:bg-blue-200 p-6 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 ease-in-out transform hover:scale-105"
           >
-            <div className="flex items-center gap-2">
+            <div className="flex justify-between  items-center gap-2">
               <h2 className="text-xl font-semibold text-blue-800 ">Tasks</h2>
               <span className="text-blue-500 text-2xl">📗</span>
             </div>
@@ -39,7 +39,7 @@ const Dashboard = () => {
             className="
             bg-green-100 hover:bg-green-200 p-6 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 ease-in-out transform hover:scale-105"
           >
-            <div className="flex items-center gap-2">
+            <div className="flex justify-between  items-center gap-2">
               <h2 className="text-xl font-semibold text-green-800 ">
                 Analytics
               </h2>
@@ -54,7 +54,7 @@ const Dashboard = () => {
             className="
             bg-purple-100 hover:bg-purple-300 p-6 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 ease-in-out transform hover:scale-105"
           >
-            <div className="flex items-center gap-2">
+            <div className="flex justify-between items-center gap-2">
               <h2 className="text-xl font-semibold text-purple-800 ">Settings</h2>
               <span className="text-purple-500 text-2xl">⚙️</span>
             </div>

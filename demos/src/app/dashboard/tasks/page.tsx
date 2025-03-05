@@ -77,6 +77,14 @@ const Tasks = () => {
                 <p className="text-sm text-gray-600 mt-2"> {task.description}</p>
                 <p className="text-sm text-gray-600 mt-2">Due Date:  {task.dueDate}</p>
               </div>
+
+              <section className="flex space-x-4">
+                <span className={` text-sm text-gray-600 px-4 py-3  text-center rounded-full  ${task.status === "completed" ? "bg-green-100 text-green-800" : task.status === "in-progress" ? "bg-yellow-100 text-yellow-800" : "bg-red-100 text-red-800"}`}>
+                  {
+                    task.status 
+                  }
+                </span>
+              </section>
             </div>
           ))}
         </section>

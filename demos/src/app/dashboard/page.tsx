@@ -18,8 +18,9 @@ const Dashboard = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           <Link
-            href="/dashboard/users"
-            className="inline-flex items-center justify-center px-8 bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 rounded-lg"
+            href="/dashboard/tasks"
+            className="
+            bg-blue-100 hover:bg-blue-200 p-6 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 ease-in-out transform hover:scale-105"
           >
             <div className="flex items-center gap-2">
               <h2>Tasks</h2>
@@ -32,38 +33,38 @@ const Dashboard = () => {
               View, Organize, and Manage your daily tasks
             </p>
           </Link>
-        </div>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {/* Card */}
-          <div className="bg-white rounded-lg shadow-lg p-6">
-            <h2 className="text-lg font-semibold text-gray-800">Tasks</h2>
-            <p className="text-gray-600 mt-2">
-              You have 3 tasks due today. View your tasks to get started.
-            </p>
-          </div>
-          {/* Card */}
-          <div className="bg-white rounded-lg shadow-lg p-6">
-            <h2 className="text-lg font-semibold text-gray-800">Analytics</h2>
-            <p className="text-gray-600 mt-2">
+          <Link
+            href="/dashboard/analytics"
+            className="
+            bg-blue-100 hover:bg-blue-200 p-6 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 ease-in-out transform hover:scale-105"
+          >
+            <div className="flex items-center gap-2">
+              <h2>Analytics</h2>
+              <span>📃</span>
+            </div>
+            <p
+              className="
+            "
+            >
               View your analytics to see how you're performing.
             </p>
-          </div>
-          {/* Card */}
-          <div className="bg-white rounded-lg shadow-lg p-6">
-            <h2 className="text-lg font-semibold text-gray-800">Settings</h2>
-            <p className="text-gray-600 mt-2">
+          </Link>
+          <Link
+            href="/dashboard/tasks"
+            className="
+            bg-blue-100 hover:bg-blue-200 p-6 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 ease-in-out transform hover:scale-105"
+          >
+            <div className="flex items-center gap-2">
+              <h2>Settings</h2>
+              <span>📃</span>
+            </div>
+            <p
+              className="
+            "
+            >
               Adjust your settings to customize your experience.
             </p>
-          </div>
-
-          {/* Card */}
-          <div className="bg-white rounded-lg shadow-lg p-6 col-span-3">
-            <h2 className="text-lg font-semibold text-gray-800">Messages</h2>
-            <p className="text-gray-600 mt-2">
-              You have 5 unread messages. View your messages to get started.
-            </p>
-          </div>
+          </Link>
         </div>
       </div>
     </div>

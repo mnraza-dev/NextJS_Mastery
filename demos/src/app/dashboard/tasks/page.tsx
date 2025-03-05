@@ -51,34 +51,35 @@ const Tasks = () => {
       priority: "low",
     },
   ];
-
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 flex flex-col items-center justify-center p-6">
-      <div className="max-w-6xl bg-white rounded-2xl shadow-lg p-8 space-y-8 mx-auto">
-        <h1 className="text-2xl font-bold text-gray-800">Tasks</h1>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-blue-50  p-8">
+      <div className="max-w-7xl bg-white rounded-lg  shadow-sm p-8  mx-auto">
+        <h1 className="text-3xl mb-8  font-bold text-gray-800">Tasks</h1>
+        {/* tasks list section  */}
+        <section className="space-y-6">
           {tasks.map((task) => (
             <div
+              style={{
+                borderColor:
+                  task.status === "completed"
+                    ? "green"
+                    : task.status === "in-progress"
+                    ? "yellow"
+                    : "red",
+              }}
               key={task.id}
-              className="bg-blue-100 p-6 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 ease-in-out transform hover:scale-105"
+              className=" flex items-center justify-between bg-white rounded-lg shadow-md p-6 border-l-4 border-blue-500"
             >
-              <h2 className="text-xl font-semibold text-blue-800">
-                {task.title}
-              </h2>
-              <p className="text-gray-700">{task.description}</p>
-              <p className="text-gray-600">
-                <strong>Status:</strong> {task.status}
-              </p>
-              <p className="text-gray-600">
-                <strong>Due Date:</strong> {task.dueDate}
-              </p>
-              <p className="text-gray-600">
-                <strong>Priority:</strong> {task.priority}
-              </p>
+              <div className="flex flex-col">
+                <h2 className="text-xl font-semibold text-gray-800">
+                  {task.title}
+                </h2>
+                <p className="text-sm text-gray-600 mt-2"> {task.description}</p>
+                <p className="text-sm text-gray-600 mt-2">Due Date:  {task.dueDate}</p>
+              </div>
             </div>
           ))}
-        </div>
+        </section>
       </div>
     </div>
   );

@@ -65,6 +65,22 @@ const Dashboard = () => {
               Adjust your settings to customize your experience.
             </p>
           </Link>
+          <Link
+                 href="/dashboard/users"
+            className="
+            bg-red-100 hover:bg-red-200 p-6 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 ease-in-out transform hover:scale-105"
+          >
+            <div className="flex justify-between items-center gap-2">
+              <h2 className="text-xl font-semibold text-red-800 ">Users</h2>
+              <span className="text-red-500 text-2xl">👥</span>
+            </div>
+            <p
+              className="
+            "
+            >
+              Adjust your settings to customize your experience.
+            </p>
+          </Link>
         </div>
       </div>
     </div>

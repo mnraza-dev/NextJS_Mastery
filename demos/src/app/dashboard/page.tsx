@@ -23,8 +23,8 @@ const Dashboard = () => {
             bg-blue-100 hover:bg-blue-200 p-6 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 ease-in-out transform hover:scale-105"
           >
             <div className="flex items-center gap-2">
-              <h2>Tasks</h2>
-              <span>📃</span>
+              <h2 className="text-xl font-semibold text-blue-800 ">Tasks</h2>
+              <span className="text-blue-500 text-2xl">📃</span>
             </div>
             <p
               className="
@@ -39,13 +39,12 @@ const Dashboard = () => {
             bg-blue-100 hover:bg-blue-200 p-6 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 ease-in-out transform hover:scale-105"
           >
             <div className="flex items-center gap-2">
-              <h2>Analytics</h2>
-              <span>📃</span>
+              <h2 className="text-xl font-semibold text-blue-800 ">
+                Analytics
+              </h2>
+              <span className="text-blue-500 text-2xl">📃</span>
             </div>
-            <p
-              className="
-            "
-            >
+            <p className="text-gray-700 mt-2 ">
               View your analytics to see how you're performing.
             </p>
           </Link>
@@ -55,8 +54,11 @@ const Dashboard = () => {
             bg-blue-100 hover:bg-blue-200 p-6 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 ease-in-out transform hover:scale-105"
           >
             <div className="flex items-center gap-2">
-              <h2>Settings</h2>
-              <span>📃</span>
+            <h2 className="text-xl font-semibold text-blue-800 ">
+                Settings
+              </h2>
+              <span className="text-blue-500 text-2xl">⚙️</span>
+           
             </div>
             <p
               className="

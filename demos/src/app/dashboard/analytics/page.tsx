@@ -59,8 +59,8 @@ const Analytics = () => {
               </div>
               <div className="text-right">
                 <p
-                  className={`text-lg font-semibold ${
-                    metric.isPositive ? "text-green-500" : "text-red-500"
+                  className={`text-sm font-semibold ${
+                    metric.isPositive ? "text-green-600" : "text-red-600"
                   }`}
                 >
                   {metric.change}
@@ -69,9 +69,29 @@ const Analytics = () => {
             </div>
           ))}
         </div>
-       
 
-  
+        {/* Chart Section */}
+
+        <div className="mb-8">
+          <h2 className="text-xl font-semibold text-gray-700 mb-4">
+            Website Traffic
+          </h2>
+          <div className="bg-gray-100 h-72 rounded-lg">Charts Placeholder</div>
+        </div>
+        <div className="mb-8">
+          <h2 className="text-xl font-semibold text-gray-700 mb-4">
+            Website Traffic
+          </h2>
+          <div className="bg-gray-100 h-72 rounded-lg">Charts Placeholder</div>
+        </div>
+
+        {/* Recent Activities */}
+        <div className="mb-8">
+          <h2 className="text-xl font-semibold text-gray-700 mb-4">
+            Recent Activities
+          </h2>
+          <div className="bg-gray-100 h-72 rounded-lg">Charts Placeholder</div>
+        </div>
       </div>
     </div>
   );

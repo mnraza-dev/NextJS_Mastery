@@ -117,6 +117,19 @@ const Analytics = () => {
                 <p className="text-sm text-gray-500">+$15,000</p>
               </div>
             </li>
+            <li className="flex items-center justify-between bg-white rounded-lg shadow-md p-4">
+              <div>
+                <h3 className="text-lg font-semibold text-pray-700 ">
+                  Website Traffic Surge
+                </h3>
+                <p className="text-sm text-gray-600F">
+                  Traffic increased by 8% on 20-07-2025
+                </p>
+              </div>
+              <div>
+                <p className="text-sm text-gray-500">+200 Visits</p>
+              </div>
+            </li>
           </ul>
         </div>
       </div>

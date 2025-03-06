@@ -41,6 +41,18 @@ const Notifications = () => {
               <option value="disable">Disable</option>
             </select>
           </div>
+
+        </div>
+
+        {/* Action Settings */}
+
+        <div className="flex justify-end space-x-4  mt-6">
+          <button className="px-6 py-2 text-gray-700 bg-gray-100 rounded-lg hover:bg-gray-200 transition-colors">
+            Cancel
+          </button>
+          <button className="px-6 py-2 text-white bg-blue-600 rounded-lg hover:bg-gray-700 transition-colors">
+            Save
+          </button>
         </div>
       </div>
     </div>

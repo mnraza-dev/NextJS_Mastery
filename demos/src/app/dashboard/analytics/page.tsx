@@ -90,7 +90,34 @@ const Analytics = () => {
           <h2 className="text-xl font-semibold text-gray-700 mb-4">
             Recent Activities
           </h2>
-          <div className="bg-gray-100 h-72 rounded-lg">Charts Placeholder</div>
+          <ul className="space-y-4">
+            <li className="flex items-center justify-between bg-white rounded-lg shadow-md p-4">
+              <div>
+                <h3 className="text-lg font-semibold text-pray-700 ">
+                  User Registration
+                </h3>
+                <p className="text-sm text-gray-600F">
+                  New user signed up on 20-08-2025
+                </p>
+              </div>
+              <div>
+                <p className="text-sm text-gray-500">10+ Users</p>
+              </div>
+            </li>
+            <li className="flex items-center justify-between bg-white rounded-lg shadow-md p-4">
+              <div>
+                <h3 className="text-lg font-semibold text-pray-700 ">
+                  Sales Increase
+                </h3>
+                <p className="text-sm text-gray-600F">
+                  Sales grew by 12% on 20-07-2025
+                </p>
+              </div>
+              <div>
+                <p className="text-sm text-gray-500">+$15,000</p>
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
     </div>

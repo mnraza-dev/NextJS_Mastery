@@ -52,10 +52,10 @@ const Analytics = () => {
               }`}
             >
               <div>
-                <h3 className="text-lg font-semibold text-gray-800">
+                <h3 className="text-xl font-semibold text-gray-700">
                   {metric.name}
                 </h3>
-                <p className="text-sm text-gray-500">{metric.value}</p>
+                <p className="text-lg text-gray-600 mt-2">{metric.value}</p>
               </div>
             </div>
           ))}

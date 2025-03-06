@@ -44,14 +44,23 @@ const Analytics = () => {
         </h1>
 
         {/* Overview Metrics section  */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+          {metrics.map((metric, index) => (
+            <div
+              className={`flex justify-between items-center bg-white rounded-lg shadow-md p-6 border-l-4  ${
+                metric.isPositive ? "border-green-500" : "border-red-500"
+              }`}
+            >
+              <div>
+                <h3 className="text-lg font-semibold text-gray-800">
+                  {metric.name}
+                </h3>
+                <p className="text-sm text-gray-500">{metric.value}</p>
+              </div>
+            </div>
+          ))}
         </div>
-        <div className="flex items-center justify-between p-6 bg-white rounded-lg shadow-sm">
-
-          
-
-        </div>
+        <div className="flex items-center justify-between p-6 bg-white rounded-lg shadow-sm"></div>
 
         {/* metrics list section  */}
         <section className="space-y-8 ">

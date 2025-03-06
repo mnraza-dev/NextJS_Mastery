@@ -57,30 +57,9 @@ const Analytics = () => {
                 </h3>
                 <p className="text-lg text-gray-600 mt-2">{metric.value}</p>
               </div>
-            </div>
-          ))}
-        </div>
-        <div className="flex items-center justify-between p-6 bg-white rounded-lg shadow-sm"></div>
-
-        {/* metrics list section  */}
-        <section className="space-y-8 ">
-          {metrics.map((metric) => (
-            <div
-              key={metric.id}
-              className="flex items-center justify-between p-6 bg-white rounded-lg shadow-sm"
-            >
-              <div className="flex items-center space-x-4">
-                <i className={`${metric.icon} text-2xl text-blue-500`}></i>
-                <div>
-                  <h3 className="text-lg font-semibold text-gray-800">
-                    {metric.name}
-                  </h3>
-                  <p className="text-sm text-gray-500">{metric.value}</p>
-                </div>
-              </div>
-              <div className="flex items-center space-x-2">
+              <div className="text-right">
                 <p
-                  className={`text-sm font-semibold ${
+                  className={`text-lg font-semibold ${
                     metric.isPositive ? "text-green-500" : "text-red-500"
                   }`}
                 >
@@ -89,7 +68,10 @@ const Analytics = () => {
               </div>
             </div>
           ))}
-        </section>
+        </div>
+       
+
+  
       </div>
     </div>
   );

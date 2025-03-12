@@ -10,4 +10,4 @@ export function GET(request: NextRequest) {
       headers: { 'Content-Type': 'application/json' },
     },
   );
-}
+}s

@@ -43,7 +43,7 @@ const Home = () => {
   return (
     <div className="p-8 space-y-8 bg-gray-900 min-h-screen">
       <div className="bg-gradient-to-r from-blue-500 to-indigo-600 p-6 rounded-xl shadow-lg">
-        <h2 className="text3xl font-semibold txet-white mb-4">
+        <h2 className="text-3xl font-semibold txet-white mb-4">
           Dashboard Overview
         </h2>
         <div className='grid grid-cols-1 sm:grid-cols-3  gap-6 text-white'>
@@ -73,7 +73,7 @@ const Home = () => {
       <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6'>
         {movies.map((movie) => (
           <div key={movie.id} className="bg-gray-900 p-6 rounded-xl shadow-lg h-full min-h-[180px] border-1 border-gray-600 cursor-pointer hover:bg-gray-950 hover:shadow-2xl transition-all duration-300 hover:border-blue-800">
-            <Link href={"/movies/" + movie.id}>
+            <Link href={`/movies/${movie.id}`}>
               <h3 className="text-xl font-semibold mb-2 text-white">{movie.title}</h3>
               <p className="text-gray-400">{movie.description}</p>
               <div className="mt-4 flex items-center">

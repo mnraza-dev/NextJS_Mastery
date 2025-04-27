@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import { movies } from "./db";
 export async function GET(req: Request) {
-    return new Response("Hello, Next.js!");
+    return NextResponse.json(movies);                                       
 }

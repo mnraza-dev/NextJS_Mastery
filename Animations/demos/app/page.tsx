@@ -1,5 +1,6 @@
+
 import React from 'react'
-import {motion} from 'motion/react'
+import * as motion from 'motion/react-client'
 const Home = () => {
   return (
     <div>
@@ -10,7 +11,7 @@ const Home = () => {
           animate={{ opacity: 1 }}
           transition={{ duration: 1 }}
         >
-          Hello world
+          Hello
         </motion.div>
       </div>
     </div>

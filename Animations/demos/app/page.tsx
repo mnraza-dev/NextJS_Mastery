@@ -2,6 +2,10 @@
 import React from 'react'
 import * as motion from 'motion/react-client'
 const Home = () => {
+  // Duration: How long the animation takes to complete
+  // Delay: The delay before the animation starts
+  // Easing: The easing function used for the animation
+
   return (
     <div>
       

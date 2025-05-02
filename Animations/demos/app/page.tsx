@@ -8,7 +8,9 @@ const Home = () => {
         <motion.div
           className="box"
           initial={{ opacity: 0 }}
-          animate={{ opacity: 1 , rotateY: 360 }}
+          animate={{ opacity: 1 , scale: 1.5  }}
+          whileHover={{ scale: 2 }}
+          exit={{ opacity: 0 }}
           transition={{ duration: 1 }}
         />
     

@@ -15,7 +15,7 @@ const Home = () => {
           animate={{ opacity: 1 , scale: 1.5  , skew: 0.5 }}
           whileHover={{ scale: 2 }}
           exit={{ opacity: 0 }}
-          transition={{ duration: 1 }}
+          transition={{delay: 2, duration: 1 }}
         />
     
     </div>

@@ -1,9 +1,7 @@
-import { useParams } from 'next/navigation'
 import React from 'react'
 
 const SnippetDetailPage = async ({params}:{params:Promise<{slug:string}>}) => {
-    const param = useParams();
-    const { slug } = param;
+    const { slug } = await params;
     console.log('Slug', slug)
   return (
     <div className='flex flex-col items-center justify-center h-full'>

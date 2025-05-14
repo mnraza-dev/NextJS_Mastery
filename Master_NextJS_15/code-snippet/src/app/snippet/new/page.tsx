@@ -5,16 +5,18 @@ import { Textarea } from '@/components/ui/textarea'
 import React from 'react'
 
 const CreateSnippetPage = () => {
+
   return (
-    <div className='flex items-center justify-center h-screen'>
-      <form>
+    <div className='flex items-center flex-col justify-center h-[80vh] '>
+      <form >
         <div>  <Label> Title</Label>
           <Input
             type='text'
             placeholder='Enter title'
-            className='w-full max-w-xs mt-2'
+            className='w-full max-w-xs mt-2 mb-2'
           /></div>
-        <div>   <Label> Code</Label>
+        <div>   
+          <Label> Code</Label>
           <Textarea
             placeholder='Enter code'
             className='w-full max-w-xs mt-2'

@@ -22,7 +22,7 @@ const CreateSnippetPage = () => {
             className='w-full max-w-xs mt-2'
             rows={10}
           /></div>
-        <Button size={'lg'} className='mt-4 bg-amber-300 w-full'>Add New Snippet</Button>
+        <Button size={'lg'} className='cursor-pointer mt-4 bg-amber-300 w-full'>Add New Snippet</Button>
 
       </form>
 

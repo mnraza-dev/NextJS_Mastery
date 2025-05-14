@@ -10,9 +10,7 @@ const Home = () => {
       <div className='flex justify-between items-center'>
         <h1 className='text-lg font-light'>  Snippets</h1>
         <Link href={"/snippet/new"}>
-          <Button variant='outline' className='cursor-pointer' >
-            Create Snippet
-          </Button>
+             <Button size={'lg'} className='cursor-pointer mt-4 bg-amber-300 w-full'> Create Snippet</Button>
         </Link>
       </div>
 

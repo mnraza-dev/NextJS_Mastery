@@ -1,6 +1,7 @@
 import { Button } from '@/components/ui/button'
 import { prisma } from '@/lib/prisma'
-import { CopyIcon, EditIcon, Trash2Icon } from 'lucide-react'
+import { CopyIcon, EditIcon,  Trash2Icon } from 'lucide-react'
+import Link from 'next/link'
 import React from 'react'
 interface SnippetDetailPageProps {
     params: Promise<{ id: string }>
@@ -27,9 +28,11 @@ const SnippetDetailPage = async ({ params, }: SnippetDetailPageProps) => {
                         <h1 className='text-3xl font-light ' > {res?.title}</h1>
 
                         <div className='flex gap-2'>
-                            <Button variant={'outline'} className='bg-black/80 text-white hover:bg-black/90 cursor-pointer' size={'lg'} >
-                               <EditIcon className='w-4 h-4 mr-2' /> Edit
-                            </Button>
+                            <Link href={`/snippet/${res.id}/edit`}>
+                                <Button variant={'outline'} className='bg-black/80 text-white hover:bg-black/90 cursor-pointer' size={'lg'} >
+                                    <EditIcon className='w-4 h-4 mr-2' /> Edit
+                                </Button>
+                            </Link>
                             <Button className='bg-red-500 text-white hover:bg-red-600 cursor-pointer' size={'lg'} >
                                 <Trash2Icon className='w-4 h-4 mr-2' /> Delete
                             </Button>

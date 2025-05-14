@@ -3,9 +3,11 @@ import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
 import { Textarea } from '@/components/ui/textarea'
 import { prisma } from '@/lib/prisma'
+import { redirect } from 'next/navigation'
 import React from 'react'
 
 const CreateSnippetPage = () => {
+
   async function createSnippet(formData: FormData) {
     "use server"
     const title = formData.get('title') as string
@@ -16,12 +18,12 @@ const CreateSnippetPage = () => {
         code
       }
     })
-
-
+    console.log('Snippet created')
+    redirect('/');
   }
   return (
     <div className='flex items-center flex-col justify-center h-[80vh] '>
-      <form >
+      <form action={createSnippet} >
         <div>  <Label htmlFor='title'> Title</Label>
           <Input
             name='title'

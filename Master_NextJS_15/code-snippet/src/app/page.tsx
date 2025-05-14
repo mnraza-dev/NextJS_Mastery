@@ -31,14 +31,11 @@ const Home = async () => {
                 <Link href={`/snippet/${snippet.id}`} key={snippet.id} className='bg-white shadow-md rounded-2xl p-4 hover:shadow-xl transition-shadow duration-300'>
                   <div className='flex items-center justify-between'>
                     <h2 className='text-xl text-gray-800 font-semibold'>{snippet.title}</h2>
-                    {/* <CopyIcon className='w-5 h-5 text-gray-600' /> */}
                   </div>
                   <Button variant='link' className='mt-2 w-full cursor-pointer '>View </Button>
 
-                  
-                  {/* <div className='h-[200px] overflow-auto'>
-                    <pre className='text-gray-600'>{snippet.code}</pre>
-                  </div> */}
+
+            
                 </Link>
               ))}
             </div>

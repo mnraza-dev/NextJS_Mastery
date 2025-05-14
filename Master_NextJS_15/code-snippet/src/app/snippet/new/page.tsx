@@ -17,7 +17,7 @@ const CreateSnippetPage = () => {
         code
       }
     })
-    console.log('Snippet created',res )
+    console.log('Snippet created', res)
     redirect('/');
   }
   return (

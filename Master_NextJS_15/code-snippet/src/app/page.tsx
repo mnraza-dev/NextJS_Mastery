@@ -34,6 +34,8 @@ const Home = async () => {
                     {/* <CopyIcon className='w-5 h-5 text-gray-600' /> */}
                   </div>
                   <Button variant='link' className='mt-2 w-full cursor-pointer '>View </Button>
+
+                  
                   {/* <div className='h-[200px] overflow-auto'>
                     <pre className='text-gray-600'>{snippet.code}</pre>
                   </div> */}

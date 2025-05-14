@@ -6,7 +6,7 @@ const Home = () => {
     <div className=''>
       <div className='flex justify-between items-center'>
         <h1>  Snippets App</h1>
-        <Button variant='outline' >
+        <Button variant='outline' className='cursor-pointer' >
           Create Snippet
         </Button>
       </div>

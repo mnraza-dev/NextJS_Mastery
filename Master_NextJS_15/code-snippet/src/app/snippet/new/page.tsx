@@ -1,9 +1,9 @@
 import React from 'react'
 
-const CraeteSnippetPage = () => {
+const CreateSnippetPage = () => {
   return (
-    <div>CraeteSnippetPage</div>
+    <div></div>
   )
 }
 
-export default CraeteSnippetPage
+export default CreateSnippetPage

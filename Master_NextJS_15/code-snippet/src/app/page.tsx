@@ -1,4 +1,5 @@
 import { Button } from '@/components/ui/button'
+import Link from 'next/link'
 import React from 'react'
 
 const Home = () => {
@@ -8,9 +9,11 @@ const Home = () => {
 
       <div className='flex justify-between items-center'>
         <h1 className='text-lg font-light'>  Snippets</h1>
-        <Button variant='outline' className='cursor-pointer' >
-          Create Snippet
-        </Button>
+        <Link href={"/snippet/new"}>
+          <Button variant='outline' className='cursor-pointer' >
+            Create Snippet
+          </Button>
+        </Link>
       </div>
 
     </div>

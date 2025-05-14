@@ -28,14 +28,14 @@ const Home = async () => {
           ) : (
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
               {snippets.map((snippet) => (
-                <Link href={`/snippet/${snippet.id}`} key={snippet.id} className='bg-white shadow-md rounded-2xl p-4 hover:shadow-xl transition-shadow duration-300'>
-                  <div className='flex items-center justify-between'>
-                    <h2 className='text-xl text-gray-800 font-semibold'>{snippet.title}</h2>
-                  </div>
-                  <Button variant='link' className='mt-2 w-full cursor-pointer '>View </Button>
+                <Link href={`/snippet/${snippet.id}`} key={snippet.id} className='bg-amber-300 shadow-md rounded-2xl py-8 px-16 hover:shadow-lg transition-shadow duration-300'>
+
+                  <h2 className='text-lg  text-black font-semibold'>{snippet.title}</h2>
+
+                  <Button variant='link' className='mt-2 w-full cursor-pointer text-black '>View </Button>
 
 
-            
+
                 </Link>
               ))}
             </div>

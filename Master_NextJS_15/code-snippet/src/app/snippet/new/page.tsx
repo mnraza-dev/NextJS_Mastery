@@ -5,9 +5,11 @@ import { Textarea } from '@/components/ui/textarea'
 import React from 'react'
 
 const CreateSnippetPage = () => {
-async function createSnippet() {
+async function createSnippet(formData: FormData) {
   "use server"
-  
+  const title = formData.get('title') as string
+  const code = formData.get('code') as string
+
 
 }
   return (

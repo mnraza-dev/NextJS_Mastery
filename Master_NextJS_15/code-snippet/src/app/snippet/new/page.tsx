@@ -7,18 +7,17 @@ import { redirect } from 'next/navigation'
 import React from 'react'
 
 const CreateSnippetPage = () => {
-
   async function createSnippet(formData: FormData) {
     "use server"
     const title = formData.get('title') as string
     const code = formData.get('code') as string
-    await prisma.snippet.create({
+    const res = await prisma.code_snippet.create({
       data: {
         title,
         code
       }
     })
-    console.log('Snippet created')
+    console.log('Snippet created',res )
     redirect('/');
   }
   return (

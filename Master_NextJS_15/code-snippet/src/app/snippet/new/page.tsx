@@ -9,6 +9,7 @@ async function createSnippet(formData: FormData) {
   "use server"
   const title = formData.get('title') as string
   const code = formData.get('code') as string
+  await 
 
 
 }

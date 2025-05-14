@@ -5,19 +5,27 @@ import { Textarea } from '@/components/ui/textarea'
 import React from 'react'
 
 const CreateSnippetPage = () => {
+async function createSnippet() {
+  "use server"
+  
 
+}
   return (
     <div className='flex items-center flex-col justify-center h-[80vh] '>
       <form >
-        <div>  <Label> Title</Label>
+        <div>  <Label htmlFor='title'> Title</Label>
           <Input
+            name='title'
+            id='title'
             type='text'
             placeholder='Enter title'
             className='w-full max-w-xs mt-2 mb-2'
           /></div>
         <div>   
-          <Label> Code</Label>
+          <Label htmlFor='code'> Code</Label>
           <Textarea
+            name='code'
+            id='code'
             placeholder='Enter code'
             className='w-full max-w-xs mt-2'
             rows={10}

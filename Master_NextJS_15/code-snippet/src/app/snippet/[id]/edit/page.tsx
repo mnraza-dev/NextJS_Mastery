@@ -16,9 +16,11 @@ const EditSnippetPage = async ({ params }: { params: Promise<{ id: string }> }) 
             </div>
         )
     }
-    <>
-        <EditSnippetForm res={res} />
-    </>
+     return (
+    <div className='h-full '>
+      <EditSnippetForm res={res} />
+    </div>
+  );
 }
 
 export default EditSnippetPage

@@ -2,14 +2,23 @@
 import React, { useState } from 'react'
 import Editor from '@monaco-editor/react';
 import type { code_snippet } from '@/generated/prisma';
+import { Button } from './ui/button';
 
 const EditSnippetForm = ({ res }: { res: code_snippet }) => {
     const [code, setCode] = useState(res.code)
     return (
-        <div>
-            <Editor height="90vh" 
+        <div >
+            <form action="" className='flex items-center justify-between mb-2'>
+                <h1 className='text-4xl font-semibold'>Your Code Editor</h1>
+                <Button className='bg-amber-300 cursor-pointer hover:bg-amber-400' type='submit'>
+                    Save
+                </Button>
+            </form>
+            <Editor height="84vh"
+            theme='vs-dark' 
             defaultLanguage="javascript" 
-            defaultValue={code} />
+            defaultValue={code}
+            className='w-full' />
         </div>
     )
 }

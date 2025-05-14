@@ -1,6 +1,7 @@
+import { deleteSnippet } from '@/actions'
 import { Button } from '@/components/ui/button'
 import { prisma } from '@/lib/prisma'
-import { CopyIcon, EditIcon,  Trash2Icon } from 'lucide-react'
+import { CopyIcon, EditIcon, Trash2Icon } from 'lucide-react'
 import Link from 'next/link'
 import React from 'react'
 interface SnippetDetailPageProps {
@@ -13,6 +14,8 @@ const SnippetDetailPage = async ({ params, }: SnippetDetailPageProps) => {
             id
         }
     })
+
+    const deleteSnippetAction = deleteSnippet.bind(null, id)
     if (!res) {
         return (
             <div className='flex flex-col items-center justify-center h-full'>
@@ -33,9 +36,11 @@ const SnippetDetailPage = async ({ params, }: SnippetDetailPageProps) => {
                                     <EditIcon className='w-4 h-4 mr-2' /> Edit
                                 </Button>
                             </Link>
-                            <Button className='bg-red-500 text-white hover:bg-red-600 cursor-pointer' size={'lg'} >
-                                <Trash2Icon className='w-4 h-4 mr-2' /> Delete
-                            </Button>
+                            <form action={deleteSnippetAction}>
+                                <Button type='submit' className='bg-red-500 text-white hover:bg-red-600 cursor-pointer' size={'lg'} >
+                                    <Trash2Icon className='w-4 h-4 mr-2' /> Delete
+                                </Button>
+                            </form>
                         </div>
                     </div>
                     <hr className='my-4 border-2 border-amber-200' />

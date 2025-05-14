@@ -2,10 +2,7 @@ import EditSnippetForm from '@/components/EditSnippetForm'
 import { prisma } from '@/lib/prisma'
 import React from 'react'
 
-interface EditSnippetPageProps {
-    params: Promise<{ id: string }>
-}
-const EditSnippetPage = async ({ params }: { params: EditSnippetPageProps }) => {
+const EditSnippetPage = async ({ params }: { params: Promise<{ id: string }> }) => {
     const id = parseInt((await params).id)
     const res = await prisma.code_snippet.findUnique({
         where: {

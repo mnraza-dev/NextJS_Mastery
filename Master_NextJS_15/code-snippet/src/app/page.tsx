@@ -1,10 +1,16 @@
+import { Button } from '@/components/ui/button'
 import React from 'react'
 
 const Home = () => {
   return (
     <div className=''>
-<h1>Snippets App</h1>
-      
+      <div className='flex justify-between items-center'>
+        <h1>  Snippets App</h1>
+        <Button variant='outline' className='bg-blue-500 text-white'>
+          Create Snippet
+        </Button>
+      </div>
+
     </div>
   )
 }

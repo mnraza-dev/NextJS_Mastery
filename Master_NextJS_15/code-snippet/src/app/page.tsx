@@ -28,7 +28,7 @@ const Home = async () => {
           ) : (
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
               {snippets.map((snippet) => (
-                <Link href={`/snippet/${snippet.id}`} key={snippet.id} className='bg-amber-300 shadow-md rounded-2xl py-8 px-16 hover:shadow-lg transition-shadow duration-300'>
+                <Link href={`/snippet/${snippet.id}`} key={snippet.id} className='bg-amber-300 hover:bg-amber-400 shadow-md rounded-2xl py-8 px-16 hover:shadow-lg transition-shadow duration-300'>
 
                     <h2 className='text-lg  text-black font-semibold'>{snippet.title}</h2>
         
